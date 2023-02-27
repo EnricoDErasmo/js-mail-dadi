@@ -46,6 +46,35 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
 */
 
+// Imposto una variabile per il bottone
+let diceBtnEl = document.getElementById("diceBtn");
+
+// Creo un evento con il click
+diceBtnEl.addEventListener("click", function() {
+
+    // Creo una variabile per generare un numero automatico da 1 a 6 per l'utente
+    let userNumber = Math.floor(Math.random() *6) +1;
+    document.getElementById("user-num").innerHTML = userNumber  
+
+    // Creo una variabile per generare un numero automatico da 1 a 6 per l'utente
+    let computerNumber = Math.floor(Math.random() *6) +1;
+    document.getElementById("computer-num").innerHTML = userNumber
+    
+    if (userNumber > computerNumber) {
+    
+        document.getElementById("challengeResult").innerHTML = "Hai vinto!!!";
+    
+    } else if (userNumber == computerNumber){
+    
+        document.getElementById("challengeResult").innerHTML = "Pareggio, gioca ancora!";
+    
+    } else {
+    
+        document.getElementById("challengeResult").innerHTML = "Hai perso.";
+    
+    }
+});
+
 
 
 
