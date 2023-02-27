@@ -58,7 +58,7 @@ diceBtnEl.addEventListener("click", function() {
 
     // Creo una variabile per generare un numero automatico da 1 a 6 per l'utente
     let computerNumber = Math.floor(Math.random() *6) +1;
-    document.getElementById("computer-num").innerHTML = userNumber
+    document.getElementById("computer-num").innerHTML = computerNumber
     
     if (userNumber > computerNumber) {
     
