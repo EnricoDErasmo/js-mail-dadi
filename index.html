@@ -44,28 +44,33 @@
 
     <!-- Parte 2 -->
 
-    <div class="container-dice">
+    <div id="diceContainer" class="container-dice">
 
-        <button id="diceBtn">Gioca!</button>
+        <div class="container-centered">
 
-        <div id="user-num">
+            <div class="result-container-dice">
+                <div class="num-title">Il tuo numero</div>
+                <div id="user-num" class="numbers"></div>
+            </div>
 
+            <div id="challengeResult">
+                
+            </div>
+            
+            <div class="result-container-dice">
+                <div class="num-title">Il numero dell'avversario</div>
+                <div id="computer-num" class="numbers"></div>
+            </div>
+              
         </div>
 
-        <div id="computer-num">
+        <div class="btn-container">
+
+            <button id="diceBtn">Gioca!</button>
 
         </div>
-
-        <div id="challengeResult">
-
-        </div>
-
-
+        
     </div>
-
-  
-    
-
 
   <script src="js/script.js"></script>    
 </body>

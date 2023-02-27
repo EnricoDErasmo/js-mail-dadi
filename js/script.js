@@ -25,7 +25,8 @@ logInBtnEl.addEventListener("click", function() {
         // ?Se l'email inserita è uguale a una delle email presenti nell'array, stampa e arresta il ciclo
         if(userEmailEl.value == validEmail[i]){
 
-            document.getElementById("result").innerHTML = "<span style='color: #abff4f;'>Email corretta!</span>";
+            document.getElementById("result").innerHTML = "<span style='color: #abff4f;'>Email corretta! Buon divertimento!</span>";
+            document.getElementById("diceContainer").style.display = "block";
 
             break;
 
@@ -62,15 +63,15 @@ diceBtnEl.addEventListener("click", function() {
     
     if (userNumber > computerNumber) {
     
-        document.getElementById("challengeResult").innerHTML = "Hai vinto!!!";
+        document.getElementById("challengeResult").innerHTML = "<span style='color: #7cb518;'>Hai vinto!!!</span>";
     
     } else if (userNumber == computerNumber){
     
-        document.getElementById("challengeResult").innerHTML = "Pareggio, gioca ancora!";
+        document.getElementById("challengeResult").innerHTML = "<span style='color: #eae151;'>Pareggio, gioca ancora!</span>";
     
     } else {
     
-        document.getElementById("challengeResult").innerHTML = "Hai perso.";
+        document.getElementById("challengeResult").innerHTML = "<span style='color: #f00000;'>Hai perso...ritenta!</span>";
     
     }
 });
