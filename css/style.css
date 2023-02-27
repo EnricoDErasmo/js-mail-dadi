@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+/* Assets */
+
+
+/* Parte uno */
+
+.container{
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+
+    height: 70px;
+
+    background-color: #232533;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 20px;
+}
+
+#userEmail{
+    padding: 10px 30px;
+
+    background-color: #4c4856;
+
+    border-style: none;
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+#userEmail::placeholder{
+    color: black;
+}
+
+#logInBtn{
+    padding: 8px 10px;
+
+    border-style: none;
+    border-radius: 20px;
+
+    background-color: #ef3464;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.result-container{
+    display: flex;
+    justify-content: center;
+
+    width: 55%;
+}
+
+#result{
+    color: white;
+
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* /Parte uno */
+
+
+
+/* Parte 2 */
+
+
+

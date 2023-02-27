@@ -25,19 +25,28 @@ logInBtnEl.addEventListener("click", function() {
         // ?Se l'email inserita è uguale a una delle email presenti nell'array, stampa e arresta il ciclo
         if(userEmailEl.value == validEmail[i]){
 
-            document.getElementById("result").innerHTML = "Benvenuto!";
+            document.getElementById("result").innerHTML = "<span style='color: #abff4f;'>Email corretta!</span>";
 
             break;
 
         // Altrimenti stampa accesso negato
         } else {
 
-            document.getElementById("result").innerHTML = "Accesso negato!";
+            document.getElementById("result").innerHTML = "<span style='color: #f21b3f;'>Accesso negato!</span>";
 
         }
     }
 
 });
+
+
+/*
+Gioco dei dadi
+Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+Stabilire il vincitore, in base a chi fa il punteggio più alto.
+*/
+
+
 
 
 
