@@ -47,6 +47,11 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
 */
 
+// Array di immagini di dadi
+let diceFaceImgs = ["img/1.png", "img/2.png", "img/3.png", "img/4.png", "img/5.png","img/6.png"];
+const diceImg1Element = document.getElementById("diceImg1");
+const diceImg2Element = document.getElementById("diceImg2");
+
 // Imposto una variabile per il bottone
 let diceBtnEl = document.getElementById("diceBtn");
 
@@ -54,12 +59,10 @@ let diceBtnEl = document.getElementById("diceBtn");
 diceBtnEl.addEventListener("click", function() {
 
     // Creo una variabile per generare un numero automatico da 1 a 6 per l'utente
-    let userNumber = Math.floor(Math.random() *6) +1;
-    document.getElementById("user-num").innerHTML = userNumber  
+    let userNumber = Math.floor(Math.random() *6) +1; 
 
     // Creo una variabile per generare un numero automatico da 1 a 6 per l'utente
     let computerNumber = Math.floor(Math.random() *6) +1;
-    document.getElementById("computer-num").innerHTML = computerNumber
     
     if (userNumber > computerNumber) {
     
@@ -74,8 +77,10 @@ diceBtnEl.addEventListener("click", function() {
         document.getElementById("challengeResult").innerHTML = "<span style='color: #f00000;'>Hai perso...ritenta!</span>";
     
     }
+    
+    diceImg1Element.src = diceFaceImgs[userNumber-1];
+    diceImg2Element.src = diceFaceImgs[computerNumber-1]; 
 });
-
 
 
 
